@@ -1,0 +1,166 @@
+{
+  "getOAuth" : {
+      "url": "https://sbx-paas.bbvacompass.com/auth/token?grant_type=client_credentials",
+      "method": "POST",
+      "headers": {
+        "Authorization": null,
+        "Content-Type": "application/json"
+      },
+      "json" : true
+  },
+
+  "createUser": {
+      "url": "https://sandbox-apis.bbvaopenplatform.com/consumer/v3.0",
+      "method": "POST",
+      "headers": {
+        "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+        "Authorization": null,
+        "X-Customer-IP": "173.11.96.150",
+        "Content-Type": "application/json"
+      },
+      "json" : true,
+
+      "body" : {
+          "first_name": "Pruthvi",
+          "middle_name": "Antonio",
+          "last_name": "Bheemarasetti",
+          "ssn": "123-45-7452",
+          "dob": "1980-05-20",
+          "contact": [
+              {
+                "type": "phone",
+                "value": "+14153214567"
+              },
+              {
+                "type": "email",
+                "value": "john.smart@mail.com"
+              }
+          ],
+          "citizenship_status": "us_citizen",
+          "citizenship_country": "USA",
+          "occupation": "finance_accounting_tax",
+          "income": [
+            "salary"
+          ],
+          "expected_activity": [
+            "cash"
+          ],
+          "address": [
+              {
+                "type": "legal",
+                "line1": "201 Mission St",
+                "city": "San Francisco",
+                "state": "CA",
+                "zip_code": "95035"
+              }
+          ],
+          "identification": [
+              {
+                "document": "drivers_license",
+                "issuing_state": "CA",
+                "number": "123456788",
+                "issuing_country": "USA",
+                "issued_date": "2015-01-01",
+                "expiration_date": "2020-01-01"
+              }
+          ],
+          "pep": {
+              "association": "no"
+          }
+
+
+      }
+
+  },
+
+  "getUsers" : {
+    "url" : "https://sandbox-apis.bbvaopenplatform.com/consumer/v3.0",
+    "headers" : {
+      "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+      "OP-User-Id" : null,
+      "Authorization": null,
+      "Content-Type": "application/json"
+    }
+
+  },
+
+  "partialUserUpdate" : {
+    "url" : "https://sandbox-apis.bbvaopenplatform.com/consumer/v3.0",
+    "method" : "PATCH",
+    "headers" : {
+      "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+      "OP-User-Id" : null,
+      "Authorization": null,
+      "X-Customer-IP": "173.11.96.150",
+      "Content-Type": "application/json"
+    },
+    "body" : {
+      "first_name" : null,
+      "middle_name" :  null,
+      "last_name" :  null,
+      "ssn" :  null,
+      "dob" : null,
+      "citizenship_status" :  null,
+      "citizenship_country" :  null,
+      "identification" :  null,
+      "pep" : null
+    },
+    "json" : true
+  },
+
+  "createNewBankAccount" : {
+    "url" : "https://sandbox-apis.bbvaopenplatform.com/accounts/v3.0",
+    "method" : "POST",
+    "headers" : {
+      "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+      "OP-User-Id" : null,
+      "Authorization": null,
+      "Content-Type": "application/json"
+    },
+    "body" : {
+      "account_type": "checking",
+      "multiple_participants": false,
+      "participants":[
+        {
+          "participant_user_id": null,
+          "participant_role": "authorized"
+        }
+      ]
+    },
+    "json" : true
+  },
+
+  "getAllBankInfo" : {
+    "url" : "https://sandbox-apis.bbvaopenplatform.com/accounts/v3.0",
+    "headers" : {
+      "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+      "OP-User-Id" : null,
+      "Authorization": null,
+      "Content-Type": "application/json"
+    },
+    "json" : true
+  },
+
+  "createNewDebitCard" : {
+    "url": "https://sandbox-apis.bbvaopenplatform.com/cards/v3.0",
+    "method": "POST",
+    "headers": {
+      "X-Unique-Transaction-Id": "162d598e6-31f3-444c-9144-f66ue47asdfz",
+      "Authorization": null,
+      "OP-User-Id" : null,
+      "Content-Type": "application/json"
+    },
+    "json" : true,
+    "body" : {
+      "cardholder_name": "JOE BUDDEN",
+      "account_id": "AC-3de1c474-fcf7-4cb0-bd4c-3d29972ea3a2",
+      "card_type": "debit",
+      "delivery": "priority",
+      "packaging": "regular",
+      "phone_number": "+12051231533",
+      "address_id": "AD-108079ac-429f-4867-bc46-529d5805a814"
+    }
+  }
+
+
+}
