@@ -5,7 +5,7 @@ Using this as a template to build out quick APIs, by reference.
   
     - should use async/await for making larger number of requests
     
-  - Response payload should be written/broken down into clean data to be stored into a database
+  - Response payload should be broken down into clean data to be stored into a database
   
    
   
