@@ -7,5 +7,5 @@ Using this as a template to build out quick APIs, by reference.
     
   -Response payload should be written/broken down into clean data to be stored into a database
   
-    -JSON file storage can only parallel process a certain amount for retrieval to be quick enough
+   
   
