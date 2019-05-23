@@ -12,5 +12,7 @@ Using this as a template to build out quick APIs, by reference.
     - if user credentials are needed, store them in another file 
   
   - Test through Postman/Insomnia
+  
+  - "npm start" === starts the application server, ported to 8082 (here)
    
   
